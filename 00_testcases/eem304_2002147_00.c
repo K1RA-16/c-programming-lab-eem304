@@ -16,9 +16,7 @@ void option(int arr[]){
     else if(arr[3]==0){
         calcMin(arr);
     }
-    else{
-        printf("input a valid last digit");
-    } 
+
 }
 void calcMax(int arr[]){
     int max = arr[0];
