@@ -10,13 +10,12 @@ void input(){
     option(arr);
 }
 void option(int arr[]){
-    if(arr[3]==1){
+    if(arr[3]==1){ 
         calcMax(arr);
     }
     else if(arr[3]==0){
         calcMin(arr);
     }
-
 }
 void calcMax(int arr[]){
     int max = arr[0];
