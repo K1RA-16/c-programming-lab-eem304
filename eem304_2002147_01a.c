@@ -14,9 +14,9 @@ int primetest(int NUM){
     return 0;
 }
 int main(){
-    int num;
+    int num,opt;
     scanf("%d",&num);
-    int opt = primetest(num);
+    opt = primetest(num);
     if(opt==1)
     printf("PRIME");
     else if(opt==0)
