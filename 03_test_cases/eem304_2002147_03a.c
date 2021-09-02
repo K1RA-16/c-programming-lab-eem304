@@ -21,7 +21,6 @@ int main(){
 		{printf("enter array size less than 500");
 		return 0;
 	}
-	
 	matmult(A,B,P,Q,R);
 	return 0;
 }
