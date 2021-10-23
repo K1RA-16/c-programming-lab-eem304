@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <malloc.h>
+#include <stdlib.h>
 void insertAtHead(int no);
 void insertAfter(int itemafter,int after);
 void insertBefore(int itembefore,int before);
