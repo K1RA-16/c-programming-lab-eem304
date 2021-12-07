@@ -13,7 +13,7 @@ void insertionsort(int a[],int N){
 
         a[j+1]=key;
     }
-    for(i=0;i<N;i++){
+    for(i=N-1;i>=0;i--){
         printf("%d ",a[i]);
     }
     printf("\n");
@@ -33,7 +33,7 @@ void selectionsort(int a[],int N){
         a[k] = a[j];
         a[j] = def;     
     }
-    for(i=0;i<N;i++){
+    for(i=N-1;i>=0;i--){
         printf("%d ",a[i]);
     }
     printf("\n");
@@ -53,17 +53,18 @@ void bubblesort(int a[],int N){
          }
         }
     }
-     for(i=0;i<N;i++){
+     for(i=N-1;i>=0;i--){
         printf("%d ",a[i]);
     }
     printf("\n");
 }
 int main(){
-    int size,i;
+    int size,i,x;
     scanf("%d",&size);
     int arr[size];
     for(i=0;i<size;i++){
-        arr[i]=rand()%100;
+        scanf("%d",&x);
+        arr[i] = x;
     }
     insertionsort(arr,size);
     selectionsort(arr,size);

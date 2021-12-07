@@ -8,7 +8,7 @@ void hanoi(int n,char a,char c,char b){
 }
 int main(){
     int n;
-    scanf("%d", &n);   
+    scanf("%d", &n);
     hanoi(n,'A','C','B');
     return 0;
 }

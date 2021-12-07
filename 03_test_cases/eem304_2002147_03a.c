@@ -21,6 +21,7 @@ int main(){
 		{printf("enter array size less than 500");
 		return 0;
 	}
+	
 	matmult(A,B,P,Q,R);
 	return 0;
 }
@@ -28,19 +29,22 @@ int main(){
 void matmult(int A[][MAX],int B[][MAX],int P,int Q,int R){
 	int i,j,k;
 	int C[P][MAX];
+	
 	for(i=0;i<P;i++){
 		for(j=0;j<R;j++){
+			 C[i][j] = 0;
 			for(k=0;k<Q;k++){
 				C[i][j] += A[i][k]*B[k][j];
 			}
 		}
 	}
+	
 	display(C,P,R);
 }
 
 void display(int C[][MAX], int rows, int cols){
 	int i=0,j=0;
-	for(i=0;i<rows;i++)
+	for(i=0;i<rows;i++)	
 	{
 	for(j=0;j<cols;j++){
 			printf("%d ",C[i][j]);
